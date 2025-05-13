@@ -17,6 +17,6 @@ static void print(const char *str)
 
 void kmain(void)
 {
-    print("Hello world!\r\n");
+    print("Hello world!\n");
     hang();
 }
