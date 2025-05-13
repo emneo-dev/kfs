@@ -1,0 +1,3 @@
+CompileFlags:
+  Add: -Wno-unknown-warning-option -Wno-compare-distinct-pointer-types -DCLANGD
+  Remove: [-m*, -f*]
