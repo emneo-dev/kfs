@@ -1,2 +1,4 @@
 build
 kernel.elf
+compile_commands.json
+.cache

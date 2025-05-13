@@ -34,7 +34,7 @@ endif
 endif
 
 C_SRC	:=	kernel.c
-AS_SRC	:=	entry.s
+AS_SRC	:=	entry.s utils.s
 SRC	:=	$(C_SRC) $(AS_SRC)
 
 OBJ	:=	$(patsubst %,build/%.o,$(SRC))
