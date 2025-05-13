@@ -65,3 +65,6 @@ fclean:
 re:
 	$(MAKE) fclean
 	$(MAKE) all
+
+run: $(NAME)
+	qemu-system-riscv64 -machine virt -bios none -kernel $(NAME) -serial mon:stdio
