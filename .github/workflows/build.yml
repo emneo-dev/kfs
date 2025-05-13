@@ -12,7 +12,8 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Install deps
-        run: sudo apt install crossbuild-essential-riscv64
+        run: |
+          sudo apt install --no-install-recommends crossbuild-essential-riscv64
       - name: Build kernel
         run: |
           . scripts/debug
