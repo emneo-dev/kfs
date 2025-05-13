@@ -1,6 +1,6 @@
 #include "utils.h"
 
-volatile unsigned char *UART = (unsigned char *) 0x10000000;
+static volatile unsigned char *UART = (unsigned char *) 0x10000000;
 
 static void putchar(char c)
 {
@@ -18,5 +18,5 @@ static void print(const char *str)
 void kmain(void)
 {
     print("Hello world!\n");
-    hang();
+    poweroff();
 }

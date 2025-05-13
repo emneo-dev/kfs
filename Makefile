@@ -67,4 +67,4 @@ re:
 	$(MAKE) all
 
 run: $(NAME)
-	qemu-system-riscv64 -machine virt -bios none -kernel $(NAME) -serial mon:stdio
+	qemu-system-riscv64 -nographic -machine virt -bios none -kernel $(NAME) -serial mon:stdio
