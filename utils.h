@@ -1,1 +1,1 @@
-void hang();
+void hang(void);
