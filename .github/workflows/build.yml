@@ -17,3 +17,8 @@ jobs:
         run: |
           . scripts/debug
           make
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kernel
+          path: ./kernel.elf
+          compression-level: 9
