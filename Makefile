@@ -14,7 +14,7 @@ STRIP	:=	$(CROSS_COMPILE)strip
 OBJCOPY	:=	$(CROSS_COMPILE)objcopy
 OBJDUMP	:=	$(CROSS_COMPILE)objdump
 
-CFLAGS	:=	-ffreestanding -Wall -Wextra -mcmodel=medany -Wundef \
+CFLAGS	:=	-ffreestanding -Wall -Wextra -mcmodel=medany -std=c23 -Wundef \
 			-Wstrict-prototypes -Wno-trigraphs \
 			-fno-strict-aliasing -fno-common \
 			-Werror-implicit-function-declaration
